@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אירית - יד שנייה | הטבת 15% הנחה</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f7f4ee;
+            --card-bg: #fffdf9;
+            --primary-color: #5c4033;
+            --accent-color: #8c6d53;
+            --text-color: #2c221e;
+            --border-color: #d8cbb8;
+            --sale-bg: #f3e5db;
+            --sale-border: #c49a6c;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(92, 64, 51, 0.08);
+        }
+
+        /* הודעת ההנחה שמוצגת תמיד בעמוד הזה */
+        .sale-banner {
+            background-color: var(--sale-bg);
+            border: 1px dashed var(--sale-border);
+            color: var(--primary-color);
+            padding: 12px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: #ebd7c8;
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+            border: 2px dashed var(--accent-color);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 25px 0;
+            width: 100%;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 14px 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .btn-facebook {
+            background-color: #4267B2;
+            color: white;
+        }
+
+        .btn-facebook:hover {
+            background-color: #365899;
+            transform: translateY(-2px);
+        }
+
+        .btn-maps {
+            background-color: #34A853;
+            color: white;
+        }
+
+        .btn-maps:hover {
+            background-color: #2d9248;
+            transform: translateY(-2px);
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #8c7a6b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- הודעת הנחה שמוצגת תמיד בתיקיית ה-sale -->
+        <div class="sale-banner">
+            ✨ מוזמנים ליהנות מ-15% הנחה באירית!
+        </div>
+
+        <div class="logo-placeholder">🌿</div>
+        
+        <h1>אירית - יד שנייה</h1>
+        <div class="subtitle">מפגשים • יצירה מקומית בקרית טבעון</div>
+
+        <div class="divider"></div>
+
+        <!-- כפתור פייסבוק -->
+        <a href="https://www.facebook.com/irittivon/" target="_blank" class="btn btn-facebook">
+            <span class="icon">👥</span>
+            <span>בקרו אותנו בפייסבוק</span>
+        </a>
+
+        <!-- כפתור גוגל מפות -->
+        <a href="https://www.google.com/maps/place/%D7%90%D7%99%D7%A8%D7%99%D7%AA+-+IRIT+%7C+%D7%99%D7%93+%D7%A9%D7%A0%D7%99%D7%94+%7C+%D7%9E%D7%A4%D7%92%D7%A9%D7%99%D7%9D+%7C+%D7%99%D7%A6%D7%99%D7%A8%D7%94+%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%AA+%D7%91%D7%A7%D7%A8%D7%99%D7%AA+%D7%98%D7%91%D7%A2%D7%95%D7%9F%E2%80%AD/@32.7226098,35.1318085,18.04z/data=!4m6!3m5!1s0x151db204bea8765f:0x413d2c2963174dc2!8m2!3d32.72289!4d35.1314483!16s%2Fg%2F11f12_nbgy?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-maps">
+            <span class="icon">📍</span>
+            <span>ניווט בוויז / Google Maps</span>
+        </a>
+
+        <div class="footer">
+            מחכים לכם בקריית טבעון ✨
+        </div>
+    </div>
+
+</body>
+</html>
