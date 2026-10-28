@@ -178,12 +178,13 @@
         </div>
     </div>
 
-    <script>
-        // בדיקה אם הכתובת מסתיימת ב-sale
-        if (window.location.pathname.includes('/sale')) {
-            document.getElementById('saleBanner').style.display = 'block';
-        }
-    </script>
+   <script>
+    // בדיקה אם יש ?sale=true בכתובת
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('sale') === 'true') {
+        document.getElementById('saleBanner').style.display = 'block';
+    }
+</script>
 
 </body>
 </html>
