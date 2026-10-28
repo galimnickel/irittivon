@@ -64,13 +64,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-
-
-
-
-
-        
-
         .logo-placeholder {
             width: 80px;
             height: 80px;
@@ -140,3 +133,57 @@
         .btn-maps:hover {
             background-color: #2d9248;
             transform: translateY(-2px);
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #8c7a6b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- הודעת הנחה שתוצג רק אם יש /sale בכתובת -->
+        <div id="saleBanner" class="sale-banner">
+            ✨ מוזמנים ליהנות מ-15% הנחה באירית!
+        </div>
+
+        <div class="logo-placeholder">🌿</div>
+        
+        <h1>אירית - יד שנייה</h1>
+        <div class="subtitle">מפגשים • יצירה מקומית בקרית טבעון</div>
+
+        <div class="divider"></div>
+
+        <!-- כפתור פייסבוק -->
+        <a href="https://www.facebook.com/irittivon/" target="_blank" class="btn btn-facebook">
+            <span class="icon">👥</span>
+            <span>בקרו אותנו בפייסבוק</span>
+        </a>
+
+        <!-- כפתור גוגל מפות -->
+        <a href="https://www.google.com/maps/place/%D7%90%D7%99%D7%A8%D7%99%D7%AA+-+IRIT+%7C+%D7%99%D7%93+%D7%A9%D7%A0%D7%99%D7%94+%7C+%D7%9E%D7%A4%D7%92%D7%A9%D7%99%D7%9D+%7C+%D7%99%D7%A6%D7%99%D7%A8%D7%94+%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%AA+%D7%91%D7%A7%D7%A8%D7%99%D7%AA+%D7%98%D7%91%D7%A2%D7%95%D7%9F%E2%80%AD/@32.7226098,35.1318085,18.04z/data=!4m6!3m5!1s0x151db204bea8765f:0x413d2c2963174dc2!8m2!3d32.72289!4d35.1314483!16s%2Fg%2F11f12_nbgy?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-maps">
+            <span class="icon">📍</span>
+            <span>ניווט בוויז / Google Maps</span>
+        </a>
+
+        <div class="footer">
+            מחכים לכם בקריית טבעון ✨
+        </div>
+    </div>
+
+    <script>
+        // בדיקה אם הכתובת מסתיימת ב-sale
+        if (window.location.pathname.includes('/sale')) {
+            document.getElementById('saleBanner').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
